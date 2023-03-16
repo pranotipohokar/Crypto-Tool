@@ -76,14 +76,14 @@ class AppDesk extends JFrame implements ActionListener
 			if(cap.equals("Encrypt"))
 			{
 				Subs_Cypher.Encrypt();
-				continue;
+				break;
 			}	
 			
 			//code to call Decryption Process
 			if(cap.equals("Decrypt"))
 			{
 				Subs_Cypher.Decrypt();
-				continue;
+				break;
 			}
 		}while(true);
 	}
