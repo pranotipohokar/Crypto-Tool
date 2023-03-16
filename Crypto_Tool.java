@@ -4,9 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 
-//code to import created package algo 
-import algo.Modi_Subs_Cypher ;
-import algo.Subs_Cypher ;
+
 
 class MyWindowAdapter extends WindowAdapter 
 {
@@ -17,14 +15,14 @@ class MyWindowAdapter extends WindowAdapter
 	}
 }
 
-class MyFrame extends JFrame implements ActionListener 
+class AppDesk extends JFrame implements ActionListener 
 {
 	private String payload="";
 	private String carrier="";
 	private String object="";
 	private String decoded="";
 
-	public MyFrame() 
+	public AppDesk() 
 	{
 		//Headng for the tool
 		super("Cryptography Tool");
@@ -73,13 +71,13 @@ class MyFrame extends JFrame implements ActionListener
 		//Code to get Operation Command
 		String cap = e.getActionCommand();
 			
-			//code to do Steganography
+			//code to call Encryption Process
 			if(cap.equals("Encrypt"))
 			{
 				//
 			}	
 			
-			//code to do DeSteganography
+			//code to call Decryption Process
 			if(cap.equals("Decrypt"))
 			{
 				//
@@ -92,6 +90,6 @@ class Crypto_Tool
 	public static void main(String[] args) 
 	{
 		//Initializing the Constructor for starting the tool.
-		MyFrame f = new MyFrame();
+		AppDesk a = new AppDesk();
 	}
 }
