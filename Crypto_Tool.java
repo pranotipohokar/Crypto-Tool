@@ -31,20 +31,28 @@ class AppDesk extends JFrame implements ActionListener
 		super.addWindowListener(wa);
 		super.setSize(600, 500);
 		super.setVisible(true);
-		super.setBackground(Color.CYAN);
+		super.setBackground(Color.ORANGE);
 		super.setLayout(null);
 
 		this.setFont(new Font("Calibri", Font.BOLD, 22));
 
+		//label for the option CHoose Algorithm
+		Label lbl = new Label("Choose Algorithm :");
+		lbl.setBounds(20,20,300,100);
+		lbl.setFont(new Font("Britannic",Font.BOLD,20));
+		this.add(lbl);
+
 		//Button for Encryption Option
 		Button b1 = new Button("Encrypt");
 		b1.setBounds(130, 120, 120, 50);
+		b1.setFont(new Font("Arial",Font.BOLD,18));
 		this.add(b1);
 		b1.addActionListener(this);
 
 		//Button for Decryption Option
 		Button b2 = new Button("Decrypt");
 		b2.setBounds(300, 120, 120, 50);
+		b2.setFont(new Font("Arial",Font.BOLD,18));
 		this.add(b2);
 		b2.addActionListener(this);
 		
